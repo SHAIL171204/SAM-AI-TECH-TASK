@@ -1,0 +1,252 @@
+
+
+Index · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roast & Co — Monthly Brew Email Template</title>
+<style>
+  body{
+    margin:0;
+    padding:0;
+    background:#EDE6DA;
+    font-family:'Trebuchet MS', 'Segoe UI', Helvetica, Arial, sans-serif;
+  }
+  .preview-frame{
+    max-width:600px;
+    margin:40px auto;
+    background:#FFF9F0;
+    box-shadow:0 12px 40px rgba(59,35,20,0.18);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  table{border-collapse:collapse;}
+  img{display:block;}
+ 
+  /* HEADER */
+  .header{
+    background:#2E1B12;
+    padding:28px 32px;
+    text-align:center;
+  }
+  .logo{
+    font-family:Georgia, 'Times New Roman', serif;
+    font-style:italic;
+    color:#F4E3C1;
+    font-size:26px;
+    letter-spacing:0.03em;
+    margin:0;
+  }
+  .logo span{color:#D89A3E;font-style:normal;}
+  .tagline{
+    color:#B79A80;
+    font-size:11px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    margin-top:4px;
+  }
+ 
+  /* HERO */
+  .hero{
+    background:#3B2317;
+    padding:44px 32px 52px;
+    text-align:center;
+  }
+  .hero-eyebrow{
+    color:#D89A3E;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    font-weight:bold;
+    margin-bottom:14px;
+  }
+  .hero-title{
+    color:#FFF9F0;
+    font-family:Georgia, serif;
+    font-size:30px;
+    line-height:1.25;
+    margin:0 0 16px;
+  }
+  .hero-copy{
+    color:#D9C6B0;
+    font-size:14px;
+    line-height:1.6;
+    max-width:420px;
+    margin:0 auto 26px;
+  }
+  .btn-cta{
+    display:inline-block;
+    background:#D89A3E;
+    color:#2E1B12;
+    font-weight:bold;
+    font-size:14px;
+    padding:14px 32px;
+    border-radius:30px;
+    text-decoration:none;
+  }
+ 
+  /* BODY SECTION */
+  .section{padding:40px 32px;}
+  .section-title{
+    font-family:Georgia, serif;
+    font-size:20px;
+    color:#2E1B12;
+    margin:0 0 6px;
+  }
+  .section-rule{
+    width:40px;
+    height:3px;
+    background:#D89A3E;
+    margin-bottom:22px;
+  }
+ 
+  .product-grid{width:100%;}
+  .product-cell{width:50%; padding:8px; vertical-align:top;}
+  .product-card{
+    background:#FFFFFF;
+    border:1px solid #ECE0CC;
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .product-img{
+    width:100%;
+    height:120px;
+    background:linear-gradient(135deg,#6F4426,#3B2317);
+  }
+  .product-body{padding:14px 16px;}
+  .product-name{font-size:14px; font-weight:bold; color:#2E1B12; margin:0 0 4px;}
+  .product-desc{font-size:12px; color:#8A7561; line-height:1.5; margin:0 0 10px;}
+  .product-price{font-size:13px; font-weight:bold; color:#D89A3E;}
+ 
+  .quote-block{
+    background:#F4E3C1;
+    border-radius:8px;
+    padding:26px 28px;
+    text-align:center;
+  }
+  .quote-text{
+    font-family:Georgia, serif;
+    font-style:italic;
+    color:#3B2317;
+    font-size:16px;
+    line-height:1.6;
+    margin:0 0 10px;
+  }
+  .quote-author{
+    font-size:11px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:#8A7561;
+  }
+ 
+  /* FOOTER */
+  .footer{
+    background:#2E1B12;
+    padding:28px 32px;
+    text-align:center;
+  }
+  .footer-social{margin-bottom:16px;}
+  .footer-social a{
+    display:inline-block;
+    width:32px; height:32px;
+    line-height:32px;
+    background:#4A2E1D;
+    border-radius:50%;
+    color:#F4E3C1;
+    text-decoration:none;
+    font-size:13px;
+    margin:0 4px;
+  }
+  .footer-text{
+    color:#8A7561;
+    font-size:11px;
+    line-height:1.7;
+  }
+  .footer-text a{color:#D89A3E; text-decoration:none;}
+ 
+  @media only screen and (max-width:480px){
+    .preview-frame{margin:0; border-radius:0;}
+    .product-cell{display:block; width:100%;}
+    .hero-title{font-size:24px;}
+    .section, .hero, .header, .footer{padding-left:20px; padding-right:20px;}
+  }
+</style>
+</head>
+<body>
+ 
+<div class="preview-frame">
+  <table role="presentation" width="100%">
+ 
+    <!-- HEADER -->
+    <tr><td class="header">
+      <p class="logo">Roast <span>&</span> Co.</p>
+      <div class="tagline">Small-batch coffee, delivered</div>
+    </td></tr>
+ 
+    <!-- HERO -->
+    <tr><td class="hero">
+      <div class="hero-eyebrow">This month's brew</div>
+      <h1 class="hero-title">Ethiopian Yirgacheffe<br>has landed.</h1>
+      <p class="hero-copy">Bright, floral, and washed for clarity — this month's single-origin pick is a limited run of 400 bags. Your subscription ships it first.</p>
+      <a href="#" class="btn-cta">Shop this month's box →</a>
+    </td></tr>
+ 
+    <!-- FEATURED PRODUCTS -->
+    <tr><td class="section">
+      <h2 class="section-title">Also brewing</h2>
+      <div class="section-rule"></div>
+      <table class="product-grid" width="100%" role="presentation">
+        <tr>
+          <td class="product-cell">
+            <div class="product-card">
+              <div class="product-img"></div>
+              <div class="product-body">
+                <p class="product-name">Sumatra Dark Roast</p>
+                <p class="product-desc">Earthy, low acid, full body.</p>
+                <span class="product-price">₹549 / 250g</span>
+              </div>
+            </div>
+          </td>
+          <td class="product-cell">
+            <div class="product-card">
+              <div class="product-img"></div>
+              <div class="product-body">
+                <p class="product-name">Pour-Over Kit</p>
+                <p class="product-desc">Everything to start at home.</p>
+                <span class="product-price">₹1,299</span>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td></tr>
+ 
+    <!-- QUOTE / SOCIAL PROOF -->
+    <tr><td class="section" style="padding-top:0;">
+      <div class="quote-block">
+        <p class="quote-text">"The Yirgacheffe tastes like someone finally explained coffee to me."</p>
+        <div class="quote-author">— Priya M., subscriber since 2024</div>
+      </div>
+    </td></tr>
+ 
+    <!-- FOOTER -->
+    <tr><td class="footer">
+      <div class="footer-social">
+        <a href="#">f</a><a href="#">in</a><a href="#">ig</a>
+      </div>
+      <div class="footer-text">
+        Roast & Co. · 12 Kettle Lane, Ahmedabad, IN<br>
+        You're receiving this because you subscribed to our monthly brew.<br>
+        <a href="#">Manage preferences</a> &nbsp;·&nbsp; <a href="#">Unsubscribe</a>
+      </div>
+    </td></tr>
+ 
+  </table>
+</div>
+ 
+</body>
+</html>
+ 
+
